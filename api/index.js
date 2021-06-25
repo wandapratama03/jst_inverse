@@ -54,7 +54,7 @@ bot.on('message', (msg) => {
             );   
             bot.sendMessage(
                 msg.chat.id,
-                `nilai z yang diprediksi adalah ${jres[2]} watt
+                `nilai z yang diprediksi adalah ${jres[2]} watt`
          );   
 })
     }else{
