@@ -51,15 +51,15 @@ bot.on('message', (msg) => {
             console.log(jres);
             bot.sendMessage(
                 msg.chat.id,
-                `nilai m yang diprediksi adalah ${jres[0]} volt`
+                `nilai m1 yang diprediksi adalah ${jres[0]} volt`
             );   
             bot.sendMessage(
                 msg.chat.id,
-                `nilai y yang diprediksi adalah ${jres[1]} watt`
+                `nilai m2 yang diprediksi adalah ${jres[1]} watt`
             );   
              bot.sendMessage(
                 msg.chat.id,
-                `nilai z yang diprediksi adalah ${jres[1]} watt`
+                `nilai m3 yang diprediksi adalah ${jres[1]} watt`
             );   
         })
     }else{
