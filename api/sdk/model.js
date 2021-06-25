@@ -8,9 +8,9 @@ function normalized(data){ // i & r
 }
 
 function denormalized(data){
-    m1 = (data[0] * 552.6264) + 650.4795
-    m2 = (data[1] * 12153.8) + 10620.5615
-    m3 = (data[2] * 12153.8) + 10620.5615
+    x = (data[0] * 552.6264) + 650.4795
+    y = (data[1] * 12153.8) + 10620.5615
+    z = (data[2] * 12153.8) + 10620.5615
     return [m1, m2, m3]
 }
 
