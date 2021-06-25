@@ -40,8 +40,9 @@ bot.onText(/\/predict/, (msg) => {
 bot.on('message', (msg) => {
     if(state == 1){
         s = msg.text.split("|");
-        i = s[0]
-        v = s[1]
+        m1 = s[1]
+        m2 = s[2]
+        m3 = s[3]
         model.predict(
             [
                 parseFloat(s[0]), // string to float
@@ -51,15 +52,15 @@ bot.on('message', (msg) => {
             console.log(jres);
             bot.sendMessage(
                 msg.chat.id,
-                `nilai m1 yang diprediksi adalah ${jres[0]} volt`
+                `nilai m1 yang diprediksi adalah ${jres[1]} degg`
             );   
             bot.sendMessage(
                 msg.chat.id,
-                `nilai m2 yang diprediksi adalah ${jres[1]} watt`
+                `nilai m2 yang diprediksi adalah ${jres[2]} degg`
             );   
              bot.sendMessage(
                 msg.chat.id,
-                `nilai m3 yang diprediksi adalah ${jres[1]} watt`
+                `nilai m3 yang diprediksi adalah ${jres[3]} degg`
             );   
         })
     }else{
